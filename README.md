@@ -1,17 +1,17 @@
 <div>
   <img width="1680" alt="Rabby Wallet with Tenderly Simulation API" src="https://github.com/Tenderly/tenderly-rabby-transaction-insights/assets/26412515/1d0f13a4-4194-476e-9197-7fed15c77459">
-  <h1 align="center">Rabby Wallet with Tenderly Simulation API</h1>
+  <h1 align="center">Integrate Tenderly Transaction Simulations Into Rabby Wallet</h1>
 </div>
 
 <p align="center">
-  Rabby Wallet with Tenderly Simulation API presents opportunities for wallets, DeFi projects, and DEXs to make transactions more human-readable for their users.
+   Integrate the Tenderly Simulation API into Rabby Wallet to simulate ERC-20 and ERC-721 transactions and display human-readable information.
 </p>
 
 <p align="center">
   <a href="https://twitter.com/TenderlyApp">
     <img src="https://img.shields.io/twitter/follow/TenderlyApp?style=flat&label=%40TenderlyApp&logo=twitter&color=0bf&logoColor=fff" alt="Twitter" />
   </a>
-  <a href="https://github.com/Tenderly/tenderly-rabby-transaction-insights/blob/main/LICENSE">
+  <a href="https://github.com/Tenderly/tenderly-rabby-transaction-insights/blob/develop/LICENSE">
     <img src="https://img.shields.io/github/license/Tenderly/tenderly-rabby-transaction-insights?label=license&logo=github&color=f80&logoColor=fff" alt="License" />
   </a>
 </p>
@@ -28,9 +28,10 @@
 
 > This repo is forked from [Rabby Wallet](https://github.com/RabbyHub/Rabby) repository.
 
-Rabby Wallet with improved transaction insights can enhance the user experience and provide a better understanding
-what would happen if transaction is executed on the chain. Tenderly Simulation API gives an opportunity for the
-web3 wallets to improve their products and save user funds without letting them to make a mistake.
+Rabby Wallet with a transaction preview option can allow users to simulate transactions and get in-depth insights before
+sending them on-chain. By using the Tenderly Simulation API, Rabby Wallet, and other wallets, DEXs, and DeFi platforms,
+can create a better experience for users, protect their funds, and provide the information they need to sign and send
+transactions with confidence.
 
 # Setup
 
