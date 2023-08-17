@@ -118,6 +118,14 @@ https://dashboard.tenderly.co/shared/simulation/a2690d05-6136-47b8-af83-b264e3de
 
 ![image](https://github.com/Tenderly/tenderly-rabby-transaction-preview/assets/26412515/700c4122-3501-4fbf-9ca1-7b2b57f5ebc1)
 
+### Transaction Preview in Rabby Wallet Powered by Tenderly Simulations - Video Tutorial
+
+<div align="center">
+    <a href="https://youtu.be/6Dqd_1EANfY">
+        <img src="https://img.youtube.com/vi/6Dqd_1EANfY/maxresdefault.jpg" alt="Tenderly" width="100%" height="auto" style="background-color: #ffffffb2; padding: 10px 20px; margin-bottom: 20px; box-sizing: border-box; max-width:200px;" />
+    </a>
+</div>
+
 ## NFT Purchase on Joepegs
 
 The images below show a successful purchase of several NFTs with asset changes and a detailed breakdown of the transaction.
@@ -129,6 +137,14 @@ You can see the whole simulated transaction on the Tenderly Dashboard here:
 https://dashboard.tenderly.co/shared/simulation/f72eca66-57a9-4411-9398-0a9d5f14f560
 
 ![image](https://github.com/Tenderly/tenderly-rabby-transaction-preview/assets/26412515/30b4392d-102b-4cf9-bc72-5d47f7c5ba5d)
+
+### Simulate NFT Transfer in Rabby Wallet With Tenderly Simulations - Video Tutorial
+
+<div align="center">
+    <a href="https://youtu.be/uLt9r4ATLy8">
+        <img src="https://img.youtube.com/vi/uLt9r4ATLy8/maxresdefault.jpg" alt="Tenderly" width="100%" height="auto" style="background-color: #ffffffb2; padding: 10px 20px; margin-bottom: 20px; box-sizing: border-box; max-width:200px;" />
+    </a>
+</div>
 
 # Contributing
 
