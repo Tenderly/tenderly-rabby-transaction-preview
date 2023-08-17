@@ -35,7 +35,62 @@ transactions with confidence.
 
 # Setup
 
-TODO
+Welcome to the setup guide for integrating Tenderly Simulation API into Rabby Wallet. In this tutorial, we will guide
+you through each step to ensure that you are set up correctly. Follow the instructions below to get started.
+
+For the full setup and understanding how Rabby works, follow the guide on [Rabby Wallet's GitHub repo](https://github.com/RabbyHub/Rabby/blob/develop/README.md).
+
+## 1. Rabby Wallet Installation
+
+### Install Rabby Wallet Chrome Extension
+
+The next step is to install the Rabby Wallet Chrome extension. You can install it from the [Chrome Web Store](https://chrome.google.com/webstore/detail/rabby-wallet/acmacodkjbdgmoleebolmdjonilkdbch). Simply click the link and follow the instructions to add the extension to your browser.
+
+### Disable the Production Version of Rabby Wallet
+
+If you have the production version of Rabby Wallet installed, you'll need to disable it. Navigate to `chrome://extensions` in your browser. Locate Rabby Wallet from the list of your installed extensions, and toggle it off. Alternatively, you can start a new profile in Chrome or Brave, which will allow you to use different extensions for different purposes.
+
+### Load an Unpacked Version
+
+Follow the [Google Chrome instructions](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked) to load an unpacked extension in developer mode.
+
+## 2. Tenderly Access
+
+### Open a Tenderly Account
+
+To utilize the features provided by the Tenderly Simulation API, you'll need a Tenderly account. If you don't have one already, visit the [Tenderly website](https://dashboard.tenderly.co/register) and create a new account.
+
+### Create an Access Token
+
+Once you've logged into your Tenderly account, you will need to create an `access token`. This is a unique identifier that allows the Rabby Wallet integration to interact with your Tenderly account. Generate it on the following link https://dashboard.tenderly.co/account/authorization.
+
+<img width="616" alt="image" src="https://github.com/Tenderly/tenderly-rabby-transaction-preview/assets/26412515/9047d712-4a01-4bc8-970f-46a48a54b91c">
+
+## 3. App Setup
+
+### Clone the Repository
+
+Now, you'll need to get the code for the app onto your local machine. You can do this by cloning this repository. If you're not sure how to do this, you can find detailed instructions in the GitHub documentation.
+
+### Start the App
+
+To clone the repository, use the following command:
+
+```
+git clone https://github.com/Tenderly/tenderly-rabby-transaction-preview.git
+```
+
+Then navigate to the root directory of the project:
+
+```
+cd tenderly-rabby-transaction-preview
+```
+
+Start the app with:
+
+```
+yarn build:dev
+```
 
 # Examples
 
