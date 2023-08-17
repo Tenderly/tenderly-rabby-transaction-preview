@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/twitter/follow/TenderlyApp?style=flat&label=%40TenderlyApp&logo=twitter&color=0bf&logoColor=fff" alt="Twitter" />
   </a>
   <a href="https://github.com/Tenderly/tenderly-rabby-transaction-preview/blob/develop/LICENSE">
-    <img src="https://img.shields.io/github/license/Tenderly/tenderly-rabby-transaction-preview?label=license&logo=github&color=f80&logoColor=fff" alt="License" />
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg?label=license&logo=github&color=f80&logoColor=fff" alt="License" />
   </a>
 </p>
 
@@ -144,4 +144,3 @@ We love our contributors! Here's how you can contribute:
 # Author
 
 - Vanja Paunović ([@dzimiks](https://twitter.com/dzimiks))
-p
