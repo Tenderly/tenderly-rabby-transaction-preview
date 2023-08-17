@@ -2,6 +2,7 @@ import { Result } from '@rabby-wallet/rabby-security-engine';
 import { Chain, ExplainTxResponse } from 'background/service/openapi';
 import React, { useMemo } from 'react';
 import styled from 'styled-components';
+import { TenderlySimulationResult } from '../TxComponents/Tenderly';
 import BalanceChange from '../TxComponents/BalanceChange';
 import ViewRawModal from '../TxComponents/ViewRawModal';
 import ApproveNFT from './ApproveNFT';
@@ -121,6 +122,7 @@ const Actions = ({
   chain,
   engineResults,
   txDetail,
+  simulatedData,
   raw,
   onChange,
   isSpeedUp,
@@ -130,6 +132,7 @@ const Actions = ({
   chain: Chain;
   engineResults: Result[];
   txDetail: ExplainTxResponse;
+  simulatedData: Record<string, any> | null;
   raw: Record<string, string | number>;
   onChange(tx: Record<string, any>): void;
   isSpeedUp: boolean;
@@ -334,6 +337,7 @@ const Actions = ({
           )}
         </div>
       </ActionWrapper>
+      <TenderlySimulationResult data={simulatedData} />
       <BalanceChange
         version={txDetail.pre_exec_version}
         data={txDetail.balance_change}

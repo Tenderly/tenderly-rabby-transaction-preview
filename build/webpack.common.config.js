@@ -5,6 +5,7 @@ const ESLintWebpackPlugin = require('eslint-webpack-plugin');
 const tsImportPluginFactory = require('ts-import-plugin');
 const AssetReplacePlugin = require('./plugins/AssetReplacePlugin');
 const { version } = require('../_raw/manifest.json');
+const { tenderlyAccount, tenderlyProject, tenderlyAccessToken } = require('../_raw/tenderly.json');
 const path = require('path');
 
 const createStyledComponentsTransformer = require('typescript-plugin-styled-components')
@@ -217,6 +218,9 @@ const config = {
     new webpack.DefinePlugin({
       'process.env.version': JSON.stringify(`version: ${version}`),
       'process.env.release': JSON.stringify(version),
+      'process.env.TENDERLY_ACCOUNT': JSON.stringify(tenderlyAccount),
+      'process.env.TENDERLY_PROJECT_ID': JSON.stringify(tenderlyProject),
+      'process.env.TENDERLY_ACCESS_TOKEN': JSON.stringify(tenderlyAccessToken),
     }),
   ],
   resolve: {

@@ -1,0 +1,143 @@
+@Spacing1: 0.5rem;
+@Spacing2: 0.75rem;
+@Spacing3: 0.875rem;
+@Spacing4: 1rem;
+@BorderColor: #EFEFF0;
+@AccordionBorder: 1px solid @BorderColor;
+
+.Accordion {
+  + .Accordion {
+    margin-top: @Spacing2;
+  }
+
+  &--WithBorder {
+    .Accordion__Header {
+      &--Open {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
+
+    .Accordion__Content {
+      border-radius: 0 0 6px 6px;
+      border-right: @AccordionBorder;
+      border-bottom: @AccordionBorder;
+      border-left: @AccordionBorder;
+    }
+  }
+}
+
+.Accordion__Icon {
+  margin-right: @Spacing4;
+}
+
+.Accordion__Header {
+  cursor: pointer;
+  border: @AccordionBorder;
+  background-color: #fff;
+  padding: @Spacing2 @Spacing3;
+  border-radius: 4px;
+  user-select: none;
+  position: relative;
+  transition: all 0.3s ease;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: -1px;
+    width: 3px;
+    background-color: transparent;
+    border-radius: 3px 0 0 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    background-color: #dce0f9;
+  }
+
+  &--Disabled {
+    opacity: 0.75;
+    cursor: not-allowed;
+  }
+
+  &--Highlighted {
+    background-color: @BorderColor;
+  }
+
+  &--Small {
+    padding: @Spacing1;
+    line-height: 1.5;
+
+    .Accordion__Header__Label {
+      font-size: 0.875rem;
+    }
+  }
+
+  &--Active {
+    &--Success {
+      &:before {
+        opacity: 1;
+        transition: all 0.3s ease;
+        background-color: #30a46c;
+      }
+    }
+
+    &--Danger {
+      &:before {
+        opacity: 1;
+        transition: all 0.3s ease;
+        background-color: #e5484d;
+      }
+    }
+  }
+}
+
+.Accordion__Header__Label {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.Accordion__Header__Description {
+  margin-top: 4px;
+  font-weight: 100;
+}
+
+.Accordion__Content {
+  padding: @Spacing1;
+  position: relative;
+
+  &:before {
+    transition: all 0.3s ease;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: transparent;
+    border-bottom-left-radius: 4px;
+    opacity: 0;
+    z-index: 1000;
+  }
+
+  &--Active {
+    &--Success {
+      &:before {
+        opacity: 1;
+        transition: all 0.3s ease;
+        background-color: #30a46c;
+      }
+    }
+
+    &--Danger {
+      &:before {
+        opacity: 1;
+        transition: all 0.3s ease;
+        background-color: #e5484d;
+      }
+    }
+  }
+}

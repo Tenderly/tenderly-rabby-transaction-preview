@@ -141,7 +141,7 @@ const ContractCall = ({
         <Col>
           <Row isTitle>Operation</Row>
           <Row>
-            <div className="relative flex items-center">
+            <div className="relative flex items-center break-all">
               {operation || '-'}
               <TooltipWithMagnetArrow
                 overlayClassName="rectangle w-[max-content]"
