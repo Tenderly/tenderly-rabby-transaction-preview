@@ -62,6 +62,7 @@ import {
 } from '../components/Actions/utils';
 import Actions from './Actions';
 import { useSecurityEngine } from 'ui/utils/securityEngine';
+import { simulateTransaction } from 'ui/utils/tenderly';
 import { useRabbyDispatch, useRabbySelector } from '@/ui/store';
 import RuleDrawer from './SecurityEngine/RuleDrawer';
 import { Level } from '@rabby-wallet/rabby-security-engine/dist/rules';
@@ -122,12 +123,14 @@ export const TxTypeComponent = ({
   isSpeedUp,
   engineResults,
   txDetail,
+  simulatedData,
 }: {
   actionRequireData: ActionRequireData;
   actionData: ParsedActionData;
   chain: Chain;
   isReady: boolean;
   txDetail: ExplainTxResponse;
+  simulatedData: Record<string, any> | null;
   raw: Record<string, string | number>;
   onChange(data: Record<string, any>): void;
   isSpeedUp: boolean;
@@ -142,6 +145,7 @@ export const TxTypeComponent = ({
         chain={chain}
         engineResults={engineResults}
         txDetail={txDetail}
+        simulatedData={simulatedData}
         raw={raw}
         onChange={onChange}
         isSpeedUp={isSpeedUp}
@@ -600,6 +604,10 @@ const SignTx = ({ params, origin }: SignTxProps) => {
   const [recommendGasLimitRatio, setRecommendGasLimitRatio] = useState(1); // 1 / 1.5 / 2
   const [recommendNonce, setRecommendNonce] = useState<string>('');
   const [updateId, setUpdateId] = useState(0);
+  const [simulatedData, setSimulatedData] = useState<Record<
+    string,
+    any
+  > | null>(null);
   const [txDetail, setTxDetail] = useState<ExplainTxResponse | null>({
     pre_exec_version: 'v0',
     balance_change: {
@@ -898,6 +906,11 @@ const SignTx = ({ params, origin }: SignTxProps) => {
       setRealNonce(recommendNonce);
     } // do not overwrite nonce if from === to(cancel transaction)
     const { pendings } = await wallet.getTransactionHistory(address);
+
+    // Tenderly Simulation
+    const simulatedTx = await simulateTransaction(tx);
+    setSimulatedData(simulatedTx);
+
     const preExecPromise = wallet.openapi
       .preExecTx({
         tx: {
@@ -1650,7 +1663,6 @@ const SignTx = ({ params, origin }: SignTxProps) => {
 
   const hasUnProcessSecurityResult = useMemo(() => {
     const { processedRules } = currentTx;
-    console.log('processedRules', processedRules);
     const enableResults = engineResults.filter((item) => item.enable);
     // const hasForbidden = enableResults.find(
     //   (result) => result.level === Level.FORBIDDEN
@@ -1729,6 +1741,7 @@ const SignTx = ({ params, origin }: SignTxProps) => {
                 actionRequireData={actionRequireData}
                 chain={chain}
                 txDetail={txDetail}
+                simulatedData={simulatedData}
                 raw={{
                   ...tx,
                   nonce: realNonce || tx.nonce,

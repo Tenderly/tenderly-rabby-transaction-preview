@@ -971,6 +971,71 @@
       }
     }
 
+    .TextOverflowEllipsis {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .tenderly-simulation-result {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .tenderly-simulation {
+      margin-top: 14px;
+      background-color: #fff;
+      border-radius: 8px;
+
+      .TenderlyAssetChanges {
+        padding: 5px;
+      }
+
+      .action-header {
+        background-color: #9E8CFC;
+      }
+
+      .tenderly_simulation_tabs.ant-tabs .ant-tabs-top > .ant-tabs-nav {
+        margin-bottom: 20px;
+      }
+
+      .tenderly_simulation_tabs.ant-tabs .ant-tabs-nav-wrap .ant-tabs-nav-list {
+        width: 100%;
+        border-radius: 4px;
+        overflow: hidden;
+
+        .ant-tabs-tab {
+          width: 100%;
+          flex-shrink: 1;
+          height: 36px;
+        }
+
+        .ant-tabs-tab + .ant-tabs-tab {
+          margin-left: 0;
+        }
+
+        .ant-tabs-tab-btn {
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      .tenderly_simulation_tabs.ant-tabs .ant-tabs-tab {
+        background-color: #e5e9ef;
+        .tab-title {
+          color: #707280;
+        }
+
+        &.ant-tabs-tab-active {
+          background-color: @primary-color;
+          .tab-title {
+            color: white;
+          }
+        }
+      }
+    }
+
     .token-balance-change {
       margin-top: 14px;
       background-color: #fff;

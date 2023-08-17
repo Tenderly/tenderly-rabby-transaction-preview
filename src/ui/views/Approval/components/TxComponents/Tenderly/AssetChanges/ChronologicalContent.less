@@ -1,0 +1,119 @@
+@WhiteColor: #fff;
+@Spacing0: 0.25rem;
+@Spacing1: 0.5rem;
+@Spacing2: 0.75rem;
+@BorderColor: #EFEFF0;
+@Mauve110: #a09fa6;
+
+.ChronologicalContent {
+  overflow: auto;
+  padding: 0 @Spacing1;
+  background-color: @WhiteColor;
+  border-radius: 6px;
+}
+
+.ChronologicalContent__Row {
+  display: grid;
+  grid-template-columns: 100px 70px 70px 120px 120px 80px;
+  min-width: 750px;
+  gap: 4px;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid @BorderColor;
+  }
+  
+  &--WithNonFungibles {
+    grid-template-columns: 100px 70px 70px 120px 120px 120px 70px 80px;
+  }
+
+  &--NativeCurrency {
+    grid-template-columns: 100px 70px 70px 120px 120px;
+  }
+}
+
+.ChronologicalContent__Row__Header,
+.ChronologicalContent__Row__DollarValue,
+.ChronologicalContent__Row__From,
+.ChronologicalContent__Row__To,
+.ChronologicalContent__Row__Amount,
+.ChronologicalContent__Row__Token,
+.ChronologicalContent__Row__Name,
+.ChronologicalContent__Row__TokenId,
+.ChronologicalContent__Row__Standard {
+  padding: @Spacing0 0;
+  overflow: hidden;
+}
+
+.ChronologicalContent__Row__Header {
+  text-align: left;
+  color: @Mauve110;
+  white-space: nowrap;
+}
+
+.ChronologicalContent__Row__DollarValue,
+.ChronologicalContent__Row__From,
+.ChronologicalContent__Row__To,
+.ChronologicalContent__Row__Amount,
+.ChronologicalContent__Row__Token,
+.ChronologicalContent__Row__Name,
+.ChronologicalContent__Row__TokenId,
+.ChronologicalContent__Row__Standard {
+  display: flex;
+  align-items: center;
+}
+
+.ChronologicalContent__Row__From,
+.ChronologicalContent__Row__To {
+  font-weight: 500;
+}
+
+.ChronologicalContent__Row__Amount {
+  font-weight: 500;
+  color: @Mauve110;
+  cursor: pointer;
+}
+
+.ChronologicalContent__Row__Name {
+  overflow: hidden;
+  min-width: 120px;
+  color: @Mauve110;
+  cursor: pointer;
+}
+
+.ChronologicalContent__Row__TokenId {
+  color: @Mauve110;
+}
+
+.ChronologicalContent__Row__Standard {
+  color: @Mauve110;
+}
+
+.ChronologicalContent__Row__DollarValue {
+  cursor: pointer;
+}
+
+.ChronologicalContent__LinkButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: @Spacing1;
+}
+
+.ChronologicalContent__Tooltip {
+  padding: @Spacing2;
+}
+
+.ChronologicalContent__TooltipValue,
+.ChronologicalContent__TooltipFooter {
+  color: rgba(@WhiteColor, 0.7);
+}
+
+.ChronologicalContent__TooltipFooter {
+  padding-top: @Spacing1;
+  border-top: 2px solid rgba(@WhiteColor, 0.1);
+}
+
+.ChronologicalContent__Desc {
+  width: 286px;
+  display: block;
+}
