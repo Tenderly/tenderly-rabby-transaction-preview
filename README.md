@@ -32,6 +32,53 @@ Rabby Wallet with improved transaction insights can enhance the user experience 
 what would happen if transaction is executed on the chain. Tenderly Simulation API gives an opportunity for the
 web3 wallets to improve their products and save user funds without letting them to make a mistake.
 
+# Setup
+
+TODO
+
+# Examples
+
+In this section, we provide examples of how the Rabby Wallet with Tenderly Simulation API works with ERC20 and NFT transfers.
+
+## ERC20 Token Swap on Uniswap
+
+The images below show a successful ERC20 token swap of ETH to 1INCH with asset changes and a detailed breakdown of the transaction.
+
+<img width="400" alt="image" src="https://github.com/Tenderly/tenderly-rabby-transaction-insights/assets/26412515/6303b243-9700-4458-a258-18418ac7b97d">
+
+You can see the whole simulated transaction on Tenderly Dashboard here:
+
+https://dashboard.tenderly.co/shared/simulation/a2690d05-6136-47b8-af83-b264e3defc1a
+
+![image](https://github.com/Tenderly/tenderly-rabby-transaction-insights/assets/26412515/700c4122-3501-4fbf-9ca1-7b2b57f5ebc1)
+
+## NFT Purchase on Joepegs
+
+The images below show a successful purchase of several NFTs with asset changes and a detailed breakdown of the transaction.
+
+<img width="400" alt="image" src="https://github.com/Tenderly/tenderly-rabby-transaction-insights/assets/26412515/f48e335e-6ffb-4ce5-b6e7-2e022eb1b058">
+
+You can see the whole simulated transaction on Tenderly Dashboard here:
+
+https://dashboard.tenderly.co/shared/simulation/f72eca66-57a9-4411-9398-0a9d5f14f560
+
+![image](https://github.com/Tenderly/tenderly-rabby-transaction-insights/assets/26412515/30b4392d-102b-4cf9-bc72-5d47f7c5ba5d)
+
+# Contributing
+
+We love our contributors! Here's how you can contribute:
+
+- [Open an issue](https://github.com/Tenderly/tenderly-rabby-transaction-insights/issues) if you believe you've encountered a bug.
+- Make a [pull request](https://github.com/Tenderly/tenderly-rabby-transaction-insights/pull) to add new features/make quality-of-life improvements/fix bugs.
+
+<a href="https://github.com/Tenderly/tenderly-rabby-transaction-insights/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Tenderly/tenderly-rabby-transaction-insights" alt="tenderly-contributors" />
+</a>
+
+# Author
+
+- Vanja Paunović ([@dzimiks](https://twitter.com/dzimiks))
+
 ### ====================
 ### Rabby Wallet's Readme
 ### ====================
