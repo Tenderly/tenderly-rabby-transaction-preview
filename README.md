@@ -1,4 +1,30 @@
-# Rabby Wallet with Tenderly Simulation API
+<div>
+  <img width="1680" alt="Rabby Wallet with Tenderly Simulation API" src="https://github.com/Tenderly/tenderly-rabby-transaction-insights/assets/26412515/1d0f13a4-4194-476e-9197-7fed15c77459">
+  <h1 align="center">Rabby Wallet with Tenderly Simulation API</h1>
+</div>
+
+<p align="center">
+  Rabby Wallet with Tenderly Simulation API presents opportunities for wallets, DeFi projects, and DEXs to make transactions more human-readable for their users.
+</p>
+
+<p align="center">
+  <a href="https://twitter.com/TenderlyApp">
+    <img src="https://img.shields.io/twitter/follow/TenderlyApp?style=flat&label=%40TenderlyApp&logo=twitter&color=0bf&logoColor=fff" alt="Twitter" />
+  </a>
+  <a href="https://github.com/Tenderly/tenderly-rabby-transaction-insights/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/Tenderly/tenderly-rabby-transaction-insights?label=license&logo=github&color=f80&logoColor=fff" alt="License" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="#introduction"><strong>Introduction</strong></a> ·
+  <a href="#setup"><strong>Setup</strong></a> ·
+  <a href="#examples"><strong>Examples</strong></a> ·
+  <a href="#contributing"><strong>Contributing</strong></a>
+</p>
+<br/>
+
+# Introduction
 
 > This repo is forked from [Rabby Wallet](https://github.com/RabbyHub/Rabby) repository.
 
