@@ -38,20 +38,20 @@ const TenderlySimulationResult = ({
         )}
         {data && <TenderlySimulationSummary simulation={data.simulation} />}
       </ActionWrapper>
-      <ActionWrapper>
-        {data?.transaction?.transaction_info.asset_changes && (
-          <TenderlyWalletChanges
-            account={account}
-            assetChanges={data.transaction.transaction_info.asset_changes}
-          />
-        )}
-      </ActionWrapper>
       {data?.transaction?.transaction_info.asset_changes && (
         <>
-          <TenderlyAssetChanges
-            assetChanges={data.transaction.transaction_info.asset_changes}
-            contracts={data.contracts}
-          />
+          <ActionWrapper>
+            <TenderlyWalletChanges
+              account={account}
+              assetChanges={data.transaction.transaction_info.asset_changes}
+            />
+          </ActionWrapper>
+          <ActionWrapper>
+            <TenderlyAssetChanges
+              assetChanges={data.transaction.transaction_info.asset_changes}
+              contracts={data.contracts}
+            />
+          </ActionWrapper>
         </>
       )}
     </div>

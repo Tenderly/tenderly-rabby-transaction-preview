@@ -6,6 +6,7 @@ import clsx from 'clsx';
 import { buildAssetChangeFromResponse } from 'ui/utils/tenderly';
 import ChronologicalContent from './ChronologicalContent';
 import PerAddressContent from './PerAddressContent';
+import { TenderlyCredits } from 'ui/views/Approval/components/TxComponents/Tenderly';
 
 export enum TokenStandardType {
   ERC20 = 'ERC20',
@@ -216,6 +217,8 @@ const TenderlyAssetChanges = ({ assetChanges, contracts }) => {
           )}
         </Tabs.TabPane>
       </Tabs>
+
+      <TenderlyCredits classname="mt-12" />
     </div>
   );
 };

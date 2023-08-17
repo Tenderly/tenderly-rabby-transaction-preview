@@ -4,6 +4,7 @@ import BigNumber from 'bignumber.js';
 import { formatAmount } from 'ui/utils/number';
 import { formatUsdValue } from 'ui/utils/number';
 import { Account } from 'background/service/preference';
+import { TenderlyCredits } from 'ui/views/Approval/components/TxComponents/Tenderly';
 
 import './TenderlyWalletChanges.less';
 
@@ -139,6 +140,7 @@ const TenderlyWalletChanges = ({
           </>
         )}
       </div>
+      <TenderlyCredits classname="mt-12" />
     </div>
   );
 };

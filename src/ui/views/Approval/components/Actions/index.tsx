@@ -337,11 +337,11 @@ const Actions = ({
           )}
         </div>
       </ActionWrapper>
+      <TenderlySimulationResult data={simulatedData} />
       <BalanceChange
         version={txDetail.pre_exec_version}
         data={txDetail.balance_change}
       />
-      <TenderlySimulationResult data={simulatedData} />
     </>
   );
 };

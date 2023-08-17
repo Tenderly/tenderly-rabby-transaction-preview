@@ -178,7 +178,8 @@ const BalanceChange = ({
             <Col>
               <Row>
                 <span className="text-15 text-gray-title font-medium">
-                  Transaction Simulation {isSuccess ? 'Results' : 'Failed'}
+                  Rabby Transaction Simulation{' '}
+                  {isSuccess ? 'Results' : 'Failed'}
                 </span>
               </Row>
             </Col>
@@ -198,7 +199,7 @@ const BalanceChange = ({
   return (
     <div className="token-balance-change">
       <p className="text-16 text-gray-title font-medium mb-12">
-        Transaction Simulation {isSuccess ? 'Results' : 'Failed'}
+        Rabby Transaction Simulation {isSuccess ? 'Results' : 'Failed'}
       </p>
       <div className="token-balance-change-content">
         <Table>

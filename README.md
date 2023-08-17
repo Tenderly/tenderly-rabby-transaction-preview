@@ -1,3 +1,15 @@
+# Rabby Wallet with Tenderly Simulation API
+
+> This repo is forked from [Rabby Wallet](https://github.com/RabbyHub/Rabby) repository.
+
+Rabby Wallet with improved transaction insights can enhance the user experience and provide a better understanding
+what would happen if transaction is executed on the chain. Tenderly Simulation API gives an opportunity for the
+web3 wallets to improve their products and save user funds without letting them to make a mistake.
+
+### ====================
+### Rabby Wallet's Readme
+### ====================
+
 # Rabby Wallet
 
 Rabby Wallet is an open source browser plugin for the DeFi ecosystem, providing users with a better-to-use and more secure multi-chain experience.
