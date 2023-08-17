@@ -66,6 +66,16 @@ Once you've logged into your Tenderly account, you will need to create an `acces
 
 <img width="616" alt="image" src="https://github.com/Tenderly/tenderly-rabby-transaction-preview/assets/26412515/9047d712-4a01-4bc8-970f-46a48a54b91c">
 
+Create a file `/_raw/tenderly.json` and update the Tenderly credentials:
+
+```json
+{
+   "tenderlyAccount": "YOUR_ACCOUNT_NAME",
+   "tenderlyProject": "YOUR_PROJECT_NAME",
+   "tenderlyAccessToken": "YOUR_ACCESS_TOKEN"
+}
+```
+
 ## 3. App Setup
 
 ### Clone the Repository
@@ -134,3 +144,4 @@ We love our contributors! Here's how you can contribute:
 # Author
 
 - Vanja Paunović ([@dzimiks](https://twitter.com/dzimiks))
+p
