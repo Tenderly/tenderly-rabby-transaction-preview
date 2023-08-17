@@ -35,7 +35,7 @@ transactions with confidence.
 
 # Setup
 
-Welcome to the setup guide for integrating Tenderly Simulation API into Rabby Wallet. In this tutorial, we will guide
+Welcome to the setup guide for integrating the Tenderly Simulation API into Rabby Wallet. In this tutorial, we will guide
 you through each step to ensure that you are set up correctly. Follow the instructions below to get started.
 
 For the full setup and understanding how Rabby works, follow the guide on [Rabby Wallet's GitHub repo](https://github.com/RabbyHub/Rabby/blob/develop/README.md).
@@ -44,7 +44,7 @@ For the full setup and understanding how Rabby works, follow the guide on [Rabby
 
 ### Install Rabby Wallet Chrome Extension
 
-The next step is to install the Rabby Wallet Chrome extension. You can install it from the [Chrome Web Store](https://chrome.google.com/webstore/detail/rabby-wallet/acmacodkjbdgmoleebolmdjonilkdbch). Simply click the link and follow the instructions to add the extension to your browser.
+The first step is to install the Rabby Wallet Chrome extension. You can install it from the [Chrome Web Store](https://chrome.google.com/webstore/detail/rabby-wallet/acmacodkjbdgmoleebolmdjonilkdbch). Simply click the link and follow the instructions to add the extension to your browser.
 
 ### Disable the Production Version of Rabby Wallet
 
@@ -104,7 +104,7 @@ yarn build:dev
 
 # Examples
 
-In this section, we provide examples of how the Rabby Wallet with Tenderly Simulation API works with ERC20 and NFT transfers.
+In this section, we show how to simulate ERC20 and NFT transfers in Rabby Wallet using the Tenderly Simulation API.
 
 ## ERC20 Token Swap on Uniswap
 
@@ -112,7 +112,7 @@ The images below show a successful ERC20 token swap of ETH to 1INCH with asset c
 
 <img width="400" alt="image" src="https://github.com/Tenderly/tenderly-rabby-transaction-preview/assets/26412515/6303b243-9700-4458-a258-18418ac7b97d">
 
-You can see the whole simulated transaction on Tenderly Dashboard here:
+You can see the whole simulated transaction on the Tenderly Dashboard here:
 
 https://dashboard.tenderly.co/shared/simulation/a2690d05-6136-47b8-af83-b264e3defc1a
 
@@ -124,7 +124,7 @@ The images below show a successful purchase of several NFTs with asset changes a
 
 <img width="400" alt="image" src="https://github.com/Tenderly/tenderly-rabby-transaction-preview/assets/26412515/f48e335e-6ffb-4ce5-b6e7-2e022eb1b058">
 
-You can see the whole simulated transaction on Tenderly Dashboard here:
+You can see the whole simulated transaction on the Tenderly Dashboard here:
 
 https://dashboard.tenderly.co/shared/simulation/f72eca66-57a9-4411-9398-0a9d5f14f560
 
