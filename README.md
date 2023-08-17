@@ -108,7 +108,7 @@ In this section, we show how to simulate ERC20 and NFT transfers in Rabby Wallet
 
 ## ERC20 Token Swap on Uniswap
 
-The images below show a successful ERC20 token swap of ETH to 1INCH with asset changes and a detailed breakdown of the transaction.
+The image below shows a successful ERC20 token swap of ETH to 1INCH with asset changes and a detailed breakdown of the transaction.
 
 <img width="400" alt="image" src="https://github.com/Tenderly/tenderly-rabby-transaction-preview/assets/26412515/6303b243-9700-4458-a258-18418ac7b97d">
 
@@ -128,7 +128,7 @@ https://dashboard.tenderly.co/shared/simulation/a2690d05-6136-47b8-af83-b264e3de
 
 ## NFT Purchase on Joepegs
 
-The images below show a successful purchase of several NFTs with asset changes and a detailed breakdown of the transaction.
+The image below shows a successful purchase of several NFTs with asset changes and a detailed breakdown of the transaction.
 
 <img width="400" alt="image" src="https://github.com/Tenderly/tenderly-rabby-transaction-preview/assets/26412515/f48e335e-6ffb-4ce5-b6e7-2e022eb1b058">
 
